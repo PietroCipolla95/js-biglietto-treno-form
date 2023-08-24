@@ -4,6 +4,46 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: aqua;
+}
+
+.container {
+    max-width: 1170px;
+    width: 50%;
+    margin: auto;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
 .flex {
     display: flex;
 }
+
+.dir-col {
+    flex-direction: column;
+}
+
+.card {
+    padding: 2rem;
+    background-color: violet;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.card > .row > div {
+    padding: 0 1rem;
+}
+
+.commands {
+    text-align: center;
+    padding-top: 5rem;
+}
+
