@@ -5,47 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrenItaglia</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>
-        Calcola il prezzo del tuo biglietto
-    </h1>
-    <div class="inputs container">  
-        <div class="card flex">
-            <div class="row-top flex">
-                <div class="col-4 flex dir-col">
-                    <h4> Nome e Cognome</h4>                    
-                    <input type="text" name="name" id="name" class="input_name">
+    <section class="calculate"> <!-- calcola il biglietto -->
+        <h1>
+            Calcola il prezzo del tuo biglietto
+        </h1>
+        <div class="inputs container">   <!-- Inputs container -->
+            <div class="card flex">
+                <div class="row-top flex">
+                    <div class="col-4 text-center"> <!-- name surname -->
+                        <h4> Nome e Cognome</h4>                    
+                        <input type="text" name="name" id="name" class="input_name btn_aqua">
+                    </div>
+                    <div class="col-4 text-center"> <!-- km -->
+                        <h4> Km da percorrere</h4>
+                        <input type="text" name="km_todo" id="km_todo" class="input_km btn_aqua">
+                    </div>
+                    <div class="col-4 text-center"> <!-- age ranges -->
+                        <h4> Fascia di età</h4>
+                        <select name="age" id="age" class="btn_aqua text-center">
+                            <option value="Minorenne">
+                                Minorenne
+                            </option>                
+                            <option value="Over_65">
+                                Over 65
+                            </option>                
+                            <option value="no_sale">
+                                Nessuna delle precedenti
+                            </option>                
+                        </select>
+                    </div>   
                 </div>
-                <div class="col-4">
-                    <h4> Km da percorrere</h4>
-                    <input type="text" name="km_todo" id="km_todo" class="input_km">
-                </div>
-                <div class="col-4">
-                    <h4> Fascia di età</h4>
-                    <select name="age" id="age">
-                        <option value="Minorenne">
-                            Minorenne
-                        </option>                
-                        <option value="Over_65">
-                            Over 65
-                        </option>                
-                        <option value="no_sale">
-                            Nessuna delle precedenti
-                        </option>                
-                    </select>
-                </div>   
+                <div class="commands"> <!-- button to generate ticket -->
+                    <button type="button">
+                        Genera
+                    </button>
+                </div>         
             </div>
-            <div class="commands">
-                <button type="button">
-                    Genera
-                </button>
-            </div>         
         </div>
-    </div>
+    </section>
+    <section class="ticket">
+        <h2>
+            Ecco il tuo Biglietto!
+        </h2>
+        <div class="container">
+            <div class="card">
+                <h3>
+                    Dettagli passeggero
+                </h3>
+                <div class="flex">
+                    <div class="col-3">
+                        <h4>
+                            Nome Passeggero
+                        </h4>
+                        <p class="passenger_name">
+
+
+                        </p>
+                    </div>
+                    <div class="col-9 flex ">
+                        <div class="col-4">
+                            <h4>
+                                Offerta
+                            </h4>
+                            <p class="offer">
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <h4>
+                                Carrozza
+                            </h4>
+                            <p class="wagon">
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <h4>
+                                Codice
+                            </h4>
+                            <p class="code">
+
+                            </p>
+                        </div>
+                        <div class="">
+                            <h4>
+                                Costo
+                            </h4>
+                            <p class="cost">
+
+                            </p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
     
 
-    
+
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
