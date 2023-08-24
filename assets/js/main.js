@@ -39,7 +39,7 @@ submit.addEventListener('click', function() {
     document.getElementById('wagon').innerHTML = wagonDom;
     
     
-    let codeDom = Math.ceil(Math.random() * 50000);
+    let codeDom = Math.floor(100000 + (Math.random() * 50000));
     document.getElementById('code').innerHTML = codeDom;
 
 })
