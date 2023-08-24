@@ -3,7 +3,11 @@ const submit = document.querySelector('button')
 submit.addEventListener('click', function() {
 
     let userName = document.getElementById('name').value;
-    console.log(userName);
+    let km = document.getElementById('km_todo').value;
+    console.log(userName, km);
+
+    let price = (km * 0.21)
+    console.log(price);
 
 })
 
